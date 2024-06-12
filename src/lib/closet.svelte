@@ -44,13 +44,14 @@
     .closet-weed {
         display: flex;
         justify-content: center;
+        gap: 5px;
     }
 
     .progress-bar {
         display: flex;
         justify-content: center;
-        height: 50px;
-        border: 1px solid red;
+        align-items: center;
+        height: 35px;
         position: relative;
     }
 
@@ -64,5 +65,18 @@
 
     progress {
         height: inherit;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    progress::-webkit-progress-value {
+        background-color: #3aff41; /* Green color */
+        border-radius: 5px;
     }
 </style>
