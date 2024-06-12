@@ -4,6 +4,7 @@
     import { cubicIn } from "svelte/easing";
 
     let grow_rate = 5000;
+    let income = 100;
     let click = false;
 
     let progress = tweened(0);
@@ -11,7 +12,7 @@
     function increment() {
         if (!click) {
             setTimeout(() => {
-                closetWeed.update((n) => n + 100); 
+                closetWeed.update((n) => n + income); 
                 click = true
             }, grow_rate);
             progress = tweened(0, {
@@ -33,8 +34,10 @@
 </script>
 <div class="closet-weed">
     <button on:click={increment}>Closet Weed</button>
-    
-    <progress value={$progress}></progress>
+    <div class="progress-bar">
+        <div class="job-income">${income}</div>
+        <progress value={$progress}></progress>
+    </div>
 </div>
 
 <style>
@@ -43,8 +46,23 @@
         justify-content: center;
     }
 
-    progress {
+    .progress-bar {
+        display: flex;
+        justify-content: center;
         height: 50px;
-        color: rgb(0, 189, 0);
+        border: 1px solid red;
+        position: relative;
+    }
+
+    .job-income {
+        z-index: 1;
+        position: absolute;
+        height: inherit;
+        display: flex;
+        align-items: center;
+    }
+
+    progress {
+        height: inherit;
     }
 </style>
