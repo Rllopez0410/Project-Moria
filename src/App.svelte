@@ -1,12 +1,27 @@
 <script>
-  let money = 0.00;
+  import { closetWeed } from "./stores";
+  import Closet from "./lib/closet.svelte";
+  
+  let num = 0;
+  
+  closetWeed.subscribe((value) => {
+    num = value;
+  })
+  
+  $: money = num.toLocaleString();
 </script>
+
 <div class="container">
   <header>
     <div class="profile-pic"></div>
-    <div class="earnings">$0.00</div>  
+    <div class="earnings">${money}</div>  
   </header>
+  
+  <div class="jobs">
+    <Closet />
+  </div>
 </div>
+
 <style>
   .container {
     display: flex;
@@ -18,6 +33,7 @@
     display: flex;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.58);
+    z-index: 1;
   }
   .profile-pic {
     background-color: rgb(84, 147, 255);

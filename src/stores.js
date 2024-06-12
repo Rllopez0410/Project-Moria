@@ -1,3 +1,3 @@
 import { writable } from "svelte/store";
 
-export const click = writable(0);
+export const closetWeed = writable(0);
