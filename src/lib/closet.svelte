@@ -87,13 +87,13 @@
 
     progress::-webkit-progress-bar {
         background-color: #bc7d00e8;
-        box-shadow: 0px 0px 5px black;
+        box-shadow: inset 0px 0px 6px black;
         border-radius: 10px;
         overflow: hidden;
     }
 
     progress::-webkit-progress-value {
-        background-color: #0eff8f; /* Green color */
+        background-color: #0eff8f;
         box-shadow: 3px 0px 3px rgba(177, 247, 255, 0.662);
         border-radius: 5px;
     }
