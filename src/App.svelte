@@ -27,16 +27,22 @@
     display: flex;
     flex-direction: column;
     height: 100dvh;
-    border: 1px solid red;
+    background-image: url(./assets/background.png);
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
   }
   header {
     display: flex;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.58);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.553);
     z-index: 1;
   }
   .profile-pic {
-    background-color: rgb(84, 147, 255);
+    background-image: url(./assets/profileIcon.png);
+    background-size: contain;
     height: 80px;
     width: 80px;
     border-radius: 5px;

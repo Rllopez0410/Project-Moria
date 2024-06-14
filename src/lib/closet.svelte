@@ -32,8 +32,9 @@
         
     }
 </script>
+
 <div class="closet-weed">
-    <button on:click={increment}>Closet Weed</button>
+    <button class="closet-btn" on:click={increment}></button>
     <div class="progress-bar">
         <div class="job-income">${income}</div>
         <progress value={$progress}></progress>
@@ -41,6 +42,20 @@
 </div>
 
 <style>
+    button {
+        background-image: url(../assets/closetweed.png);
+        background-size: cover;
+        border: 2px solid rgba(0, 0, 0, 0.408);
+        height: 70px;
+        width: 70px;
+        border-radius: 100px;
+        transition: 200ms;
+    }
+
+    button:active {
+        box-shadow: 0px 0px 8px rgb(216, 205, 255);
+    }
+
     .closet-weed {
         display: flex;
         justify-content: center;
@@ -64,19 +79,22 @@
     }
 
     progress {
+        width: 230px;
         height: inherit;
         -webkit-appearance: none;
         appearance: none;
     }
 
     progress::-webkit-progress-bar {
-        background-color: #f3f3f3;
+        background-color: #bc7e00;
+        box-shadow: 0px 0px 5px black;
         border-radius: 10px;
         overflow: hidden;
     }
 
     progress::-webkit-progress-value {
-        background-color: #3aff41; /* Green color */
+        background-color: #0eff8f; /* Green color */
+        box-shadow: 3px 0px 3px rgba(177, 247, 255, 0.662);
         border-radius: 5px;
     }
 </style>
