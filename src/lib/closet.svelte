@@ -86,7 +86,7 @@
     }
 
     progress::-webkit-progress-bar {
-        background-color: #bc7e00;
+        background-color: #bc7d00e8;
         box-shadow: 0px 0px 5px black;
         border-radius: 10px;
         overflow: hidden;
