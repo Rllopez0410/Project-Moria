@@ -29,7 +29,6 @@
     height: 100dvh;
     background-image: url(./assets/background.png);
     background-size: cover;
-    background-clip: border-box;
     background-repeat: no-repeat;
   }
   header {
@@ -41,7 +40,7 @@
     z-index: 1;
   }
   .profile-pic {
-    background-image: url(./assets/profileIcon.png);
+    background: url(./assets/profileIcon.png);
     background-size: contain;
     height: 80px;
     width: 80px;
