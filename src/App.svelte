@@ -1,10 +1,10 @@
 <script>
-  import { closetWeed } from "./stores";
-  import Closet from "./lib/closet.svelte";
+  import { mining_pool } from "./stores";
+  import Pool from "./lib/pool.svelte";
   
   let num = 0;
   
-  closetWeed.subscribe((value) => {
+  mining_pool.subscribe((value) => {
     num = value;
   })
   
@@ -18,7 +18,7 @@
   </header>
   
   <div class="jobs">
-    <Closet />
+    <Pool />
   </div>
 </div>
 

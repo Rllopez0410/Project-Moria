@@ -1,5 +1,5 @@
 <script>
-    import { closetWeed } from "../stores";
+    import { mining_pool } from "../stores";
     import { tweened } from "svelte/motion";
     import { cubicIn } from "svelte/easing";
 
@@ -12,7 +12,7 @@
     function increment() {
         if (!click) {
             setTimeout(() => {
-                closetWeed.update((n) => n + income); 
+                mining_pool.update((n) => n + income); 
                 click = true
             }, grow_rate);
             progress = tweened(0, {
@@ -121,7 +121,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border-radius: 8px;
+        border-radius: 15px 5px 15px 5px;
         border: 2px solid rgb(146, 81, 20);
         background-color: rgb(253, 141, 36);
         font-family: "Gloria Hallelujah", cursive;
