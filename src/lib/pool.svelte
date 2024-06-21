@@ -11,9 +11,9 @@
 
     function increment() {
         if (!click) {
+            click = true
             setTimeout(() => {
                 mining_pool.update((n) => n + income); 
-                click = true
             }, grow_rate);
             progress = tweened(0, {
                 duration: grow_rate,
@@ -28,13 +28,12 @@
             });
             progress.set(0);
             click = false;  
-        },grow_rate + 1)
-        
+        },grow_rate + 1)    
     }
 </script>
 
 <div class="closet-weed">
-    <button class="closet-btn" on:click={increment}></button>
+    <button class="closet-btn" on:click={increment} disabled={click}></button>
     <div class="progression">
         <div class="progress-top">
             <div class="job-income">${income}</div>
