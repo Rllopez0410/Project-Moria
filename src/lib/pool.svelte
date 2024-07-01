@@ -123,7 +123,7 @@
         border-radius: 15px 5px 15px 5px;
         border: 2px solid rgb(146, 81, 20);
         background-color: rgb(253, 141, 36);
-        font-family: "Gloria Hallelujah", cursive;
+        font-family: "Pixelify Sans", sans-serif;
         color: white;
         width: 170px;
         height: 35px;
