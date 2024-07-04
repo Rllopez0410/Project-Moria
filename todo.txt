@@ -1,0 +1,15 @@
+Use the `x` character to check off assignments.
+
+///CODE
+[] make the job work on its own without it having to be clicked
+[] reduce the job time duration for every upgrade
+[] create a working timer so that users have a visual queue
+[] increase earnings from job after upgrading
+[] increase buy requirement after each upgrade
+[] upload new assets
+
+//ART
+[] draw ASIC mining asset
+
+//MUSIC
+[] make loop for game
