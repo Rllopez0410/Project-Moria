@@ -40,7 +40,7 @@
     z-index: 1;
   }
   .profile-pic {
-    background: url(./assets/profileIcon.gif);
+    background: url(./assets/character.gif);
     background-size: contain;
     height: 80px;
     width: 80px;
