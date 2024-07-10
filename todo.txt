@@ -9,8 +9,8 @@ Use the `x` character to check off assignments.
 [] upload new assets
 
 //ART
-[X] draw ASIC mining asset
-[] make animation for ASIC miner
+[x] draw ASIC mining asset
+[x] make animation for ASIC miner
 
 //MUSIC
 [] make loop for game
