@@ -11,7 +11,7 @@ Use the `x` character to check off assignments.
 //ART
 [x] draw ASIC mining asset
 [x] make animation for ASIC miner
-[] make animation for mining pool
+[x] make animation for mining pool
 
 //MUSIC
 [] make loop for game

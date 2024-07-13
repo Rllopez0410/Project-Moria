@@ -51,11 +51,12 @@
 
 <style>
     .closet-btn {
-        background-image: url(../assets/closetweed.png);
+        background-image: url(../assets/mine-pool-animation.gif);
         background-size: cover;
-        border: 2px solid rgba(0, 0, 0, 0.408);
-        height: 70px;
-        width: 70px;
+        background-color: rgb(255, 81, 110);
+        border: none;
+        height: 75px;
+        width: 75px;
         border-radius: 100px;
         transition: 200ms;
     }
