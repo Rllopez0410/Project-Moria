@@ -9,9 +9,17 @@ Use the `x` character to check off assignments.
 [x] upload new assets
 
 //ART
+[x] draw cloud mining asset
+[x] make animation for cloud mining
+[x] draw cpu asset
+[x] draw bitcoin asset
+[x] make animation for bitcoin
+[x] draw gpu asset
+[x] make animation for gpu
 [x] draw ASIC mining asset
 [x] make animation for ASIC miner
 [x] make animation for mining pool
+[] draw progress bar
 
 //MUSIC
 [] make loop for game

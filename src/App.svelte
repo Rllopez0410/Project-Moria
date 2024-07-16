@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     height: 100dvh;
-    background-image: url(./assets/background.png);
+    background-image: url(./assets/newBackground.png);
     background-size: cover;
     background-repeat: no-repeat;
   }

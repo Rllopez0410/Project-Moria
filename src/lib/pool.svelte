@@ -3,7 +3,7 @@
     import { tweened } from "svelte/motion";
     import { cubicIn } from "svelte/easing";
 
-    let grow_rate = 5000;
+    let grow_rate = 20000;
     let income = 100;
     let click = false;
 
@@ -13,7 +13,7 @@
         if (!click) {
             click = true
             setTimeout(() => {
-                mining_pool.update((n) => n + income); 
+                mining_pool.update((n) => n + income);
             }, grow_rate);
             progress = tweened(0, {
                 duration: grow_rate,
