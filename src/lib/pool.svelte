@@ -3,7 +3,7 @@
     import { tweened } from "svelte/motion";
     import { cubicIn } from "svelte/easing";
 
-    let grow_rate = 20000;
+    let grow_rate = 5000;
     let income = 100;
     let click = false;
 
@@ -32,8 +32,11 @@
     }
 </script>
 
-<div class="closet-weed">
-    <button class="closet-btn" on:click={increment} disabled={click}></button>
+<div class="mining-pool">
+    <div class="btn-container">
+        <button class="mining-pool-btn" on:click={increment} disabled={click}></button>
+        <div class="job-level">1/10</div>
+    </div>
     <div class="progression">
         <div class="progress-top">
             <div class="job-income">${income}</div>
@@ -50,28 +53,48 @@
 </div>
 
 <style>
-    .closet-btn {
+    .mining-pool {
+        display: flex;
+        justify-content: center;
+        border: 2px solid greenyellow;
+        gap: 10px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid greenyellow;
+    }
+
+    .mining-pool-btn {
         background-image: url(../assets/mine-pool-animation.gif);
         background-size: cover;
-        background-color: rgb(255, 81, 110);
-        border: none;
+        background-color: #703d79;
+        border: 2px solid black;
         height: 75px;
         width: 75px;
         border-radius: 100px;
         transition: 200ms;
     }
 
-    .closet-btn:active {
-        box-shadow: 0px 0px 8px rgb(216, 205, 255);
-    }
-
-    .closet-weed {
+    .job-level {
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -20px;
+        background-color: #703d79;
+        border: 2px solid black;
+        border-radius: 20px;
+        color: white;
+        width: 70px;
     }
 
     .progression {
-        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     .progress-top {
@@ -105,28 +128,29 @@
     }
 
     progress::-webkit-progress-bar {
-        background-color: #bc7d00e8;
-        box-shadow: inset 0px 0px 6px black;
-        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #703d79;
+        border-left: 3px solid black;
+        border: 2px solid black;
         overflow: hidden;
+        padding: 4px;
     }
 
     progress::-webkit-progress-value {
-        background-color: #0eff8f;
-        box-shadow: 3px 0px 3px rgba(177, 247, 255, 0.662);
-        border-radius: 5px;
+        background-color: #ff4f4f;
     }
 
     .buy {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border-radius: 15px 5px 15px 5px;
-        border: 2px solid rgb(146, 81, 20);
-        background-color: rgb(253, 141, 36);
+        border-radius: 3px;
+        border: 2px solid rgb(125, 71, 20);
+        background-color: rgb(255, 195, 106);
         font-family: "Pixelify Sans", sans-serif;
         color: white;
-        width: 170px;
+        width: 160px;
         height: 35px;
     }
 
@@ -136,7 +160,7 @@
         align-items: center;
         background-color: #bc7d00e8;
         box-shadow: 0px 0px 5px inset black;
-        border-radius: 10px;
+        border-radius: 3px;
         width: 40px;
         height: 35px;
         color: white;

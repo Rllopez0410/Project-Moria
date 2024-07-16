@@ -41,10 +41,11 @@
   }
   .profile-pic {
     background: url(./assets/character.gif);
+    background-color: #703d79;
+    border: 2px solid black;
     background-size: contain;
     height: 80px;
     width: 80px;
-    border-radius: 5px;
   }
   .earnings {
     font-size: 32px;

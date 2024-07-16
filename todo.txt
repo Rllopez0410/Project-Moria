@@ -2,11 +2,14 @@ Use the `x` character to check off assignments.
 
 ///CODE
 [] make the job work on its own without it having to be clicked
-[] reduce the job time duration for every upgrade
+[] increase the buy requirement after each purchase
+[] each purchase should result in an increase of xp towards the next job level
 [] create a working timer so that users have a visual queue
 [] increase earnings from job after upgrading
 [] increase buy requirement after each upgrade
 [x] upload new assets
+[x] create a job level counter
+[] program conter to effect the speed of the job
 
 //ART
 [x] draw cloud mining asset
