@@ -6,7 +6,7 @@ Use the `x` character to check off assignments.
 [] create a working timer so that users have a visual queue
 [] increase earnings from job after upgrading
 [] increase buy requirement after each upgrade
-[] upload new assets
+[x] upload new assets
 
 //ART
 [x] draw ASIC mining asset
