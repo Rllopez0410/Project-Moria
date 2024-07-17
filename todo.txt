@@ -25,4 +25,8 @@ Use the `x` character to check off assignments.
 [] draw progress bar
 
 //MUSIC
-[] make loop for game
+[] make music for game
+[] make sound effects
+
+// IDEAS
+- NFT perks/upgrade system

@@ -56,7 +56,7 @@
     .mining-pool {
         display: flex;
         justify-content: center;
-        border: 2px solid greenyellow;
+        
         gap: 10px;
     }
 
@@ -64,7 +64,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid greenyellow;
+       
     }
 
     .mining-pool-btn {
