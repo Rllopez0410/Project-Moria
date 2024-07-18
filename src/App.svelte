@@ -1,6 +1,6 @@
 <script>
   import { mining_pool } from "./stores";
-  import Pool from "./lib/pool.svelte";
+  import Pool from "./components/pool.svelte";
   
   let num = 0;
   
