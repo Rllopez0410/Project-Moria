@@ -31,6 +31,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   header {
     display: flex;
     padding: 5px;
@@ -39,6 +40,7 @@
     background-color: rgba(0, 0, 0, 0.553);
     z-index: 1;
   }
+
   .profile-pic {
     background: url(./assets/character.gif);
     background-color: #703d79;
@@ -47,6 +49,7 @@
     height: 80px;
     width: 80px;
   }
+  
   .earnings {
     font-size: 32px;
     color: white;
