@@ -1,24 +1,25 @@
 <script>
-  import { mining_pool } from "./stores";
-  import Pool from "./components/pool.svelte";
-  
-  let num = 0;
-  
+  import { mining_pool } from './stores';
+  import Pool from './components/pool.svelte';
+  import Job from './components/job.svelte';
+
+  import { jobs } from './testJobs.js';
+
   mining_pool.subscribe((value) => {
-    num = value;
-  })
-  
-  $: money = num.toLocaleString();
+    console.log(value);
+  });
 </script>
 
 <div class="container">
   <header>
     <div class="profile-pic"></div>
-    <div class="earnings">${money}</div>  
+    <div class="earnings">${$mining_pool.toFixed(2)}</div>
   </header>
-  
+
   <div class="jobs">
-    <Pool />
+    {#each jobs as job}
+      <Job {...job} />
+    {/each}
   </div>
 </div>
 
