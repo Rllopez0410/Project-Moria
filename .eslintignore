@@ -1,0 +1,30 @@
+# Ignore build output directories
+/public
+
+# Ignore node_modules
+/node_modules
+
+# Ignore IDE-specific files and folders
+/.vscode
+
+# Ignore configuration files
+/*.config.js
+/*.config.ts
+
+# Ignore Prettier configuration files
+/.prettierrc
+/.prettierignore
+
+# Ignore Git metadata
+/.git
+/.gitignore
+
+# Ignore lock files
+/package-lock.json
+
+# Ignore other files that do not need linting
+/index.html
+/jsconfig.json
+/svelte.config.js
+/vite.config.js
+/todo.txt
