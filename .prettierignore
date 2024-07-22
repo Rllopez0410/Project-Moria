@@ -1,0 +1,29 @@
+# Ignore node_modules and build directories:
+node_modules
+
+# Ignore static files:
+public
+
+# Ignore environment and config files:
+*.env
+*.local
+jsconfig.json
+
+# Ignore specific root directory files:
+/index.html
+/.prettierrc
+/.prettierignore
+/package.json
+/package-lock.json
+/svelte.config.js
+/vite.config.js
+
+# Ignore all Markdown files:
+*.md
+
+# Ignore log and text files:
+*.log
+todo.txt
+
+# Ignore VSCode settings:
+.vscode
