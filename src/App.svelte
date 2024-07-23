@@ -1,9 +1,9 @@
 <script>
-  import { mining_pool } from './stores';
-  import { jobs } from './testJobs.js';
+  import { USD } from './stores';
+  import { jobs } from './Jobs.js';
   import Job from './components/job.svelte';
-  
-  mining_pool.subscribe((value) => {
+
+  USD.subscribe((value) => {
     console.log(value);
   });
 </script>
@@ -11,7 +11,7 @@
 <div class="container">
   <header>
     <div class="profile-pic"></div>
-    <div class="earnings">${$mining_pool.toFixed(2)}</div>
+    <div class="earnings">${$USD.toFixed(2)}</div>
   </header>
 
   <div class="jobs">
