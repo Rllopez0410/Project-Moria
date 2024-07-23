@@ -1,10 +1,8 @@
 <script>
   import { mining_pool } from './stores';
-  import Pool from './components/pool.svelte';
-  import Job from './components/job.svelte';
-
   import { jobs } from './testJobs.js';
-
+  import Job from './components/job.svelte';
+  
   mining_pool.subscribe((value) => {
     console.log(value);
   });
