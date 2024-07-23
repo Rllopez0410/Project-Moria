@@ -53,11 +53,11 @@
   }
 </script>
 
-<div class="mining-pool">
+<div class="job">
   <div class="btn-container">
     <button
       style="background-image: url({asset}); background-size: cover; background-position: center;"
-      class="mining-pool-btn"
+      class="job-btn"
       data-tooltip={name}
       on:click={startJob}
       disabled={isActive}
@@ -84,7 +84,7 @@
 </div>
 
 <style>
-  .mining-pool {
+  .job {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -96,7 +96,7 @@
     align-items: center;
   }
 
-  .mining-pool-btn {
+  .job-btn {
     background-color: #703d79;
     border: 2px solid black;
     height: 75px;
@@ -105,12 +105,12 @@
     transition: 200ms;
   }
 
-  .mining-pool-btn:hover {
+  .job-btn:hover {
     background-color: #5e3166; /* Slightly darker background on hover */
     transform: scale(1.05); /* Slightly scale up to give a hover effect */
   }
 
-  .mining-pool-btn:active {
+  .job-btn:active {
     background-color: #4b2753; /* Even darker background on active */
     transform: scale(0.99); /* Slightly scale down to give a pressed effect */
   }
