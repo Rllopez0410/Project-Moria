@@ -1,5 +1,5 @@
 <script>
-  import { mining_pool } from '../stores';
+  import { USD } from '../stores';
   import { tweened } from 'svelte/motion';
   import { cubicIn } from 'svelte/easing';
 
@@ -33,13 +33,13 @@
   function completeJob() {
     if (isActive) {
       isActive = false;
-      mining_pool.update((money) => money + income);
+      USD.update((money) => money + income);
       progress.set(0, { duration: 0 });
     }
   }
 
   function upgradeJob() {
-    mining_pool.update((money) => {
+    USD.update((money) => {
       if (money >= costToUpgrade) {
         let newBalance = money - costToUpgrade;
         level += 1;
@@ -73,7 +73,7 @@
       <button
         class="buy"
         on:click={upgradeJob}
-        disabled={$mining_pool < costToUpgrade}
+        disabled={$USD < costToUpgrade}
       >
         <div>1x buy</div>
         <div>${costToUpgrade.toFixed(2)}</div>
